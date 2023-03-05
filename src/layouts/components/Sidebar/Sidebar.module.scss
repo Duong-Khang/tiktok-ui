@@ -1,0 +1,11 @@
+.wrapper {
+  width: 356px;
+  padding: 20px 0 26px 8px;
+  margin-left: -10px;
+  margin-top: var(--default-layout-header-height);
+
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+}

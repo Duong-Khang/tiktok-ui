@@ -39,8 +39,33 @@
   color: #161823;
   background-color: transparent;
   font-size: 2.4rem;
-  padding: 4px 16px;
+  padding: 4px 14px;
   cursor: pointer;
+  position: relative;
+  height: 38px;
+
+  .msg-icon {
+    margin-bottom: -6px;
+  }
+}
+
+.action-inbox {
+  color: rgb(255, 255, 255);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  left: 32px;
+  background: rgb(254, 44, 85);
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: absolute;
+  top: -5%;
+  padding: 0px 6px;
 }
 
 .more-btn {
