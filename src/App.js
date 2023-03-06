@@ -3,6 +3,19 @@ import { Fragment } from 'react';
 import { publicRoutes } from '~/routes';
 import DefaultLayout from './layouts';
 
+// const options = {
+//   method: 'GET',
+//   headers: {
+//     'X-RapidAPI-Key': '37dce92fddmsh0469c5fb81dc9fbp1afcccjsnfba276d82b5e',
+//     'X-RapidAPI-Host': 'tiktok-video-no-watermark2.p.rapidapi.com',
+//   },
+// };
+
+// fetch('https://tiktok-video-no-watermark2.p.rapidapi.com/user/search?keywords=lebong&count=5&cursor=0', options)
+//   .then((response) => response.json())
+//   .then((response) => console.log(response))
+//   .catch((err) => console.error(err));
+
 function App() {
   return (
     <Router>

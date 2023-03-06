@@ -1,0 +1,46 @@
+.wrapper {
+  border-top: 1px solid #f0f0f1;
+  padding: 16px 8px 8px;
+}
+
+.label {
+  color: rgba(22, 24, 35, 0.75);
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 20px;
+  padding-bottom: 16px;
+}
+
+.discover-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.discover-item {
+  position: relative;
+  align-items: center;
+  border: 1px solid rgba(22, 24, 35, 0.2);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  margin-right: 8px;
+  padding: 1px 10px;
+
+  display: -webkit-box;
+  font-size: 16px;
+  line-height: 18px;
+  -webkit-line-clamp: 1; /* số dòng hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.discover-icon {
+  position: absolute;
+}
+
+.discover-title {
+  padding-left: 20px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(22, 24, 35, 0.75);
+}

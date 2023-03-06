@@ -6,6 +6,39 @@
 
   position: fixed;
   overflow-y: scroll;
+  overflow-y: hidden;
+  overscroll-behavior-y: contain;
   top: 0;
   bottom: 0;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(22, 24, 35, 0.06);
+    }
+  }
 }
+
+// .wrapper::-webkit-scrollbar {
+//   display: none;
+// }
+
+// .scroll-bar {
+//   position: absolute;
+//   height: 50px;
+//   width: 10px;
+//   background-color: #000;
+//   top: 0;
+//   right: 0;
+// }
