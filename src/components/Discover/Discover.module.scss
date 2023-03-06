@@ -32,6 +32,10 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  &:hover {
+    background: rgba(22, 24, 35, 0.03);
+  }
 }
 
 .discover-icon {

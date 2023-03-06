@@ -3,6 +3,7 @@ import config from '~/config';
 import styles from './Sidebar.module.scss';
 import Menu, { MenuItem } from './Menu';
 import Discover from '~/components/Discover';
+import Footer from '~/components/Footer';
 import {
   HomeActiveIcon,
   HomeIcon,
@@ -34,6 +35,8 @@ function Sidebar() {
 
         {/* Discover */}
         <Discover label="Discover" />
+        {/* {Footer} */}
+        <Footer />
       </aside>
     </>
   );
