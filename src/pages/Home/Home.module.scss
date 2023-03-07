@@ -78,6 +78,7 @@
   position: absolute;
   left: 8%;
   bottom: 8%;
+  cursor: pointer;
 }
 
 .sound-group {
@@ -103,6 +104,7 @@
 
 .sound-icon {
   transform: rotate(90deg);
+  cursor: pointer;
 }
 
 //Slider
@@ -160,6 +162,16 @@
   flex-direction: column;
 }
 
+.arrow-top {
+  border-width: 12px;
+  border-color: #fff transparent transparent transparent;
+  border-style: solid;
+  display: block;
+  position: absolute;
+  bottom: -24px;
+  left: 38px;
+}
+
 .action-icon {
   display: flex;
   align-items: center;
@@ -183,6 +195,7 @@
 
 .share {
   width: 280px;
+  box-shadow: rgb(0 0 0 / 12%) 0px 4px 16px;
 }
 
 .btn-wrapper {

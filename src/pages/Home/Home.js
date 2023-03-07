@@ -78,6 +78,7 @@ function Home() {
             </div>
           </div>
         </PopperWrapper>
+        <span className={cx('arrow-top')}></span>
       </div>
     );
   };
@@ -157,7 +158,7 @@ function Home() {
                 </div>
               </button>
 
-              <Tippy offset={[90, 0]} placement="top" interactive delay={[800, 0]} render={renderShare}>
+              <Tippy offset={[90, 8]} placement="top" interactive delay={[800, 800]} render={renderShare}>
                 <button className={cx('btn')}>
                   <div className={cx('btn-content')}>
                     <span className={cx('action-icon')}>
