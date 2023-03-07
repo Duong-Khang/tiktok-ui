@@ -161,9 +161,11 @@
 }
 
 .action-icon {
-  height: 24px;
-  width: 24px;
-  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
   background-color: #f1f1f2;
   border-radius: 50%;
   color: #161823;
@@ -177,4 +179,46 @@
   line-height: 17px;
   text-align: center;
   font-weight: bold;
+}
+
+.share {
+  width: 280px;
+}
+
+.btn-wrapper {
+  justify-content: flex-start !important;
+  margin: 0 5px 0 5px !important;
+
+  &:hover {
+    background: rgba(22, 24, 35, 0.03);
+    border-radius: none;
+  }
+}
+
+.share-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.btn-share {
+  display: flex;
+  align-items: center;
+}
+
+.share-text {
+  margin-left: 12px;
+}
+
+.btn-arrow {
+  background-color: transparent;
+  margin: 5px 0;
+  height: 24px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(22, 24, 35, 0.03);
+    border-radius: none;
+  }
 }
