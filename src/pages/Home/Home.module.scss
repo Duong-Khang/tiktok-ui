@@ -1,0 +1,180 @@
+.wrapper {
+  padding: 24px 0px;
+  margin-right: 24px;
+  width: 692px;
+  max-width: 692px;
+  flex-shrink: 0;
+  padding: 24px 0px;
+  position: relative;
+}
+
+.video-wrapper {
+  border-bottom: 1px solid #e7e7e9;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 0px;
+  position: relative;
+  max-width: 692px;
+}
+
+.avatar {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+}
+
+.info-link {
+  display: flex;
+  align-items: baseline;
+}
+
+.info {
+  margin-left: 12px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 25px;
+  margin-right: 4px;
+}
+
+.nickname {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 28px;
+}
+
+.time {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 28px;
+}
+
+.video-desc__link {
+  font-weight: 600;
+  padding-left: 4px;
+}
+
+.video-music {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 22px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.info-link:hover .name {
+  text-decoration: underline;
+}
+
+.video {
+  margin-right: 20px;
+  position: relative;
+}
+
+.active-group {
+  position: absolute;
+  left: 8%;
+  bottom: 8%;
+}
+
+.sound-group {
+  display: flex;
+  height: 24px;
+  transform: rotate(270deg);
+  width: 118px;
+  position: absolute;
+  right: -16px;
+  bottom: 92px;
+}
+
+.slide-container {
+  background-color: rgba(22, 24, 35, 0.34);
+  width: 68px;
+  display: flex;
+  justify-content: center;
+  border-radius: 32px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+
+.sound-icon {
+  transform: rotate(90deg);
+}
+
+//Slider
+
+.slider {
+  //   transform: rotate(270deg);
+  -webkit-appearance: none;
+  width: 56px;
+  height: 2px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.34);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.video-tiktok {
+  border-radius: 8px;
+}
+
+.video-content {
+  display: flex;
+}
+
+.video-action {
+  //   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+  //   position: absolute;
+}
+
+.btn-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.action-icon {
+  height: 24px;
+  width: 24px;
+  padding: 14px;
+  background-color: #f1f1f2;
+  border-radius: 50%;
+  color: #161823;
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+.action-number {
+  font-size: 1.2rem;
+  color: rgba(22, 24, 35, 0.75);
+  line-height: 17px;
+  text-align: center;
+  font-weight: bold;
+}
