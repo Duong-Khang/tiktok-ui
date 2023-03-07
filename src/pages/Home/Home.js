@@ -251,7 +251,87 @@ function Home() {
             <div className={cx('modal-content__right')}>
               {/* top */}
               <div className={cx('modal-content__right-top')}>
-                <div className={cx('modal-content__right-top-header')}></div>
+                <div className={cx('modal-content__right-top-header')}>
+                  <div className={cx('modal-content__right-top-header-info')}>
+                    <img
+                      className={cx('modal-content__right-top-header-avatar')}
+                      src={images.avatarVideo}
+                      alt="avatar"
+                    />
+                    <Link className={cx('modal-content__right-top-header-info-link')}>
+                      <span className={cx('modal-content__right-top-header-info-username')}>anhngoc6010</span>
+                      <div className={cx('modal-content__right-top-header-info-nickname')}>
+                        chúa tể tình yêu
+                        <span> · </span>
+                        <span className={cx('modal-content__right-top-header-info-time')}>5h ago </span>
+                      </div>
+                    </Link>
+                  </div>
+
+                  <div className={cx('modal-content__right-top-header-btn-follow')}>
+                    <Button className={cx('modal-content__right-top-header-btn')} outlineColor>
+                      Following
+                    </Button>
+                  </div>
+                </div>
+
+                <div className={cx('modal-content__right-top-tag')}>
+                  <Link className={cx('modal-content__right-top-tag-item')}>#cosplay</Link>
+                  <Link className={cx('modal-content__right-top-tag-item')}>#rdcossplay</Link>
+                </div>
+
+                <div className={cx('modal-content__right-top-music')}>
+                  <MusicIcon />
+                  <Link className={cx('modal-content__right-top-music-link')}>
+                    Boys a Liar Pt2 Sped Up - Kuya Magik
+                  </Link>
+                </div>
+
+                <div className={cx('modal-content__right-top-social')}>
+                  <div className={cx('modal-content__right-top-social-action')}>
+                    <button className={cx('modal-content__right-top-social-action-btn-group')}>
+                      <span className={cx('modal-content__right-top-social-action-btn-group-heart-icon')}>
+                        <HeartIcon />
+                      </span>
+                      <span className={cx('modal-content__right-top-social-action-btn-group-number')}>157</span>
+                    </button>
+
+                    <button className={cx('modal-content__right-top-social-action-btn-group')}>
+                      <span className={cx('modal-content__right-top-social-action-btn-group-comment-icon')}>
+                        <CommentIcon />
+                      </span>
+                      <span className={cx('modal-content__right-top-social-action-btn-group-number')}>3</span>
+                    </button>
+                  </div>
+
+                  <div className={cx('modal-content__right-top-share')}>
+                    <Link className={cx('modal-content__right-top-share-icon')}>
+                      <EmbedIcon />
+                    </Link>
+                    <Link className={cx('modal-content__right-top-share-icon')}>
+                      <SendToFriendIcon />
+                    </Link>
+                    <Link className={cx('modal-content__right-top-share-icon')}>
+                      <FacebookIcon />
+                    </Link>
+                    <Link className={cx('modal-content__right-top-share-icon')}>
+                      <WhatsAppIcon />
+                    </Link>
+                    <Link className={cx('modal-content__right-top-share-icon')}>
+                      <CopyLinkIcon />
+                    </Link>
+                    <Link className={cx('modal-content__right-top-share-icon')}>
+                      <ShareIcon />
+                    </Link>
+                  </div>
+                </div>
+
+                <div className={cx('modal-content__right-top-copy')}>
+                  <Link className={cx('modal-content__right-top-copy-link')}>
+                    https://www.tiktok.com/@a_doy2/video/7207567527344360705?is_from_webapp=1&sender_device=pc&web_id=7177605755355743745
+                  </Link>
+                  <Link className={cx('modal-content__right-top-copy-btn')}>Copy link</Link>
+                </div>
               </div>
               {/* bottom */}
               <div className={cx('modal-content__right-bottom')}></div>
