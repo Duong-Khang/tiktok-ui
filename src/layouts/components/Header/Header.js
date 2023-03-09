@@ -10,6 +10,7 @@ import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 import Button from '~/components/Button/Button';
 import Menu from '~/components/Popper/Menu';
 import {
+  AddIcon,
   CoinsIcon,
   FeedbackIcon,
   InboxIcon,
@@ -104,9 +105,10 @@ function Header() {
           {currentUser ? (
             <>
               <Tippy delay={[0, 200]} content="Upload video" placement="bottom">
-                <button className={cx('action-btn')}>
-                  <UploadIcon />
-                </button>
+                <div className={cx('action-btn', 'action-btn-upload')}>
+                  <AddIcon />
+                  <span className={cx('action-btn-title')}>Upload</span>
+                </div>
               </Tippy>
 
               <Tippy delay={[0, 200]} content="Message" placement="bottom">

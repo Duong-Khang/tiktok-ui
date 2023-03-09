@@ -172,6 +172,16 @@
   left: 38px;
 }
 
+.arrow-bottom {
+  border-width: 12px;
+  border-color: transparent transparent #fff transparent;
+  border-style: solid;
+  display: block;
+  position: absolute;
+  top: -24px;
+  right: 15px;
+}
+
 .action-icon {
   display: flex;
   align-items: center;
@@ -315,6 +325,7 @@
 .modal-content {
   height: 100%;
   display: flex;
+  position: relative;
 }
 
 .modal-content__left {
@@ -520,6 +531,13 @@
   flex: 1;
   background-color: #fff;
   padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content__right-top {
+  border-bottom: 1px solid #cbcbcd;
+  padding-bottom: 16px;
 }
 
 .modal-content__right-top-header-info:hover .modal-content__right-top-header-info-username {
@@ -685,4 +703,189 @@
   &:hover {
     background-color: rgba(22, 24, 35, 0.03);
   }
+}
+
+.modal-content__right-top-share {
+  display: flex;
+  // align-items: center;
+}
+
+.modal-content__right-top-share-icon-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: rgb(22, 24, 35);
+
+  &:hover {
+    background-color: rgba(22, 24, 35, 0.1);
+  }
+
+  svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+//BOTTOM
+
+.modal-content__right-bottom {
+  min-height: 82px;
+  border-top: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+}
+
+.modal-content__right-bottom-body {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.modal-content__right-bottom-input {
+  display: flex;
+  background-color: #f1f1f2;
+  padding: 0 9px;
+  width: 432px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid transparent;
+
+  &:focus-within {
+    border-color: rgba(22, 24, 35, 0.2);
+  }
+}
+
+.modal-content__right-bottom-input-comment {
+  background-color: #f1f1f2;
+  caret-color: rgb(254, 44, 85);
+  width: 328px;
+}
+
+.modal-content__right-bottom-input-icon {
+  display: flex;
+  align-items: center;
+}
+
+.modal-content__right-bottom-user-icon {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 3px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+}
+
+.modal-content__right-bottom-emoji-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 3px;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+}
+
+.modal-content__right-bottom-btn-post {
+  color: rgba(22, 24, 35, 0.34);
+  font-weight: 600;
+  cursor: default;
+  flex: 0 0 48px;
+  font-size: 14px;
+  line-height: 39px;
+  text-align: right;
+  margin-right: 4px;
+}
+
+//CENTER
+
+.modal-content__right-center {
+  flex: 1;
+  background-color: #f8f8f8;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  padding: 24px 32px;
+}
+
+.modal-content__right-center-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-content__right-center-body-info {
+  display: flex;
+}
+
+.modal-content__right-center-avatar {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.modal-content__right-center-name {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 25px;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.modal-content__right-center-content {
+  font-size: 1.6rem;
+  line-height: 22px;
+  white-space: pre-line;
+  word-break: break-word;
+  margin-bottom: 6px;
+}
+
+.modal-content__right-center-reply {
+  display: flex;
+  color: rgba(22, 24, 35, 0.5);
+  font-size: 1.4rem;
+  line-height: 20px;
+}
+
+.modal-content__right-center-reply-btn {
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+.modal-content__right-center-social {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0;
+}
+
+.modal-content__right-center-social-heart-icon {
+  height: 26px;
+  color: rgba(22, 24, 35, 0.5);
+}
+
+.modal-content__right-center-social-number {
+  font-size: 1.2rem;
+  line-height: 17px;
 }
