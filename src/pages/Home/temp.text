@@ -1,0 +1,220 @@
+<div className={cx('modal', 'modal-js')}>
+        <div className={cx('modal-container')}>
+          <div className={cx('modal-content')}>
+            <div className={cx('modal-content__left')}>
+              {/* Video */}
+              <div className={cx('modal-content__left-video-group')}>
+                <video
+                  className={cx('modal-content__left-video')}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                  }}
+                >
+                  <source src={videos.video1} type="video/mp4" />
+                </video>
+              </div>
+              {/* Close video */}
+              <div className={cx('modal-content__left-close')}>
+                <FontAwesomeIcon icon={faClose} />
+              </div>
+              {/* Logo */}
+              <div className={cx('modal-content__left-logo')}>
+                <LogoModalIcon />
+              </div>
+              {/* Report */}
+              <div className={cx('modal-content__left-report')}>
+                <FlagIcon />
+                <span>Report</span>
+              </div>
+              {/* button prev */}
+              <div className={cx('modal-content__left-prev')}>
+                <PrevIcon />
+              </div>
+              {/* button next */}
+              <div className={cx('modal-content__left-next')}>
+                <NextIcon />
+              </div>
+              {/* Sound */}
+              <div className={cx('modal-content__left-sound-group')}>
+                <span className={cx('modal-content__left-sound-icon')}>
+                  <NotSoundIcon />
+                </span>
+                <div className={cx('modal-content__left-slide-container')}>
+                  <input onChange={null} type="range" min="1" max="100" className={cx('modal-content__left-slider')} />
+                </div>
+              </div>
+              {/* Range video */}
+              <div className={cx('modal-content__left-range-group')}>
+                <input type="range" min="1" max="100" className={cx('modal-content__left-range')} />
+                <span className={cx('modal-content__left-range-time')}>10:00/20:00</span>
+              </div>
+            </div>
+
+            <div className={cx('modal-content__right')}>
+              {/* top */}
+              <div className={cx('modal-content__right-top')}>
+                <div className={cx('modal-content__right-top-header')}>
+                  <div className={cx('modal-content__right-top-header-info')}>
+                    <img
+                      className={cx('modal-content__right-top-header-avatar')}
+                      src={images.avatarVideo}
+                      alt="avatar"
+                    />
+                    <Link className={cx('modal-content__right-top-header-info-link')}>
+                      <span className={cx('modal-content__right-top-header-info-username')}>anhngoc6010</span>
+                      <div className={cx('modal-content__right-top-header-info-nickname')}>
+                        chúa tể tình yêu
+                        <span> · </span>
+                        <span className={cx('modal-content__right-top-header-info-time')}>5h ago </span>
+                      </div>
+                    </Link>
+                  </div>
+
+                  <div className={cx('modal-content__right-top-header-btn-follow')}>
+                    <Button className={cx('modal-content__right-top-header-btn')} outlineColor>
+                      Following
+                    </Button>
+                  </div>
+                </div>
+
+                <div className={cx('modal-content__right-top-tag')}>
+                  <Link className={cx('modal-content__right-top-tag-item')}>#cosplay</Link>
+                  <Link className={cx('modal-content__right-top-tag-item')}>#rdcossplay</Link>
+                </div>
+
+                <div className={cx('modal-content__right-top-music')}>
+                  <MusicIcon />
+                  <Link className={cx('modal-content__right-top-music-link')}>
+                    Boys a Liar Pt2 Sped Up - Kuya Magik
+                  </Link>
+                </div>
+
+                <div className={cx('modal-content__right-top-social')}>
+                  <div className={cx('modal-content__right-top-social-action')}>
+                    <button className={cx('modal-content__right-top-social-action-btn-group')}>
+                      <span className={cx('modal-content__right-top-social-action-btn-group-heart-icon')}>
+                        <HeartIcon />
+                      </span>
+                      <span className={cx('modal-content__right-top-social-action-btn-group-number')}>157</span>
+                    </button>
+
+                    <button className={cx('modal-content__right-top-social-action-btn-group')}>
+                      <span className={cx('modal-content__right-top-social-action-btn-group-comment-icon')}>
+                        <CommentIcon />
+                      </span>
+                      <span className={cx('modal-content__right-top-social-action-btn-group-number')}>3</span>
+                    </button>
+                  </div>
+
+                  <div className={cx('modal-content__right-top-share')}>
+                    <TippyNoHeadless content="Embed">
+                      <Link className={cx('modal-content__right-top-share-icon')}>
+                        <EmbedIcon />
+                      </Link>
+                    </TippyNoHeadless>
+
+                    <TippyNoHeadless content="Send to Friends">
+                      <Link className={cx('modal-content__right-top-share-icon')}>
+                        <SendToFriendIcon />
+                      </Link>
+                    </TippyNoHeadless>
+
+                    <TippyNoHeadless content="Share to Facebook">
+                      <Link className={cx('modal-content__right-top-share-icon')}>
+                        <FacebookIcon />
+                      </Link>
+                    </TippyNoHeadless>
+
+                    <TippyNoHeadless content="Share to WhatsApp">
+                      <Link className={cx('modal-content__right-top-share-icon')}>
+                        <WhatsAppIcon />
+                      </Link>
+                    </TippyNoHeadless>
+
+                    <TippyNoHeadless content="Copy link">
+                      <Link className={cx('modal-content__right-top-share-icon')}>
+                        <CopyLinkIcon />
+                      </Link>
+                    </TippyNoHeadless>
+
+                    <Tippy
+                      offset={[-110, 8]}
+                      placement="bottom"
+                      interactive
+                      delay={[800, 800]}
+                      render={renderShareModal}
+                    >
+                      <Link className={cx('modal-content__right-top-share-icon')}>
+                        <span className={cx('modal-content__right-top-share-icon-arrow')}>
+                          <ShareIcon />
+                        </span>
+                      </Link>
+                    </Tippy>
+                  </div>
+                </div>
+
+                <div className={cx('modal-content__right-top-copy')}>
+                  <Link className={cx('modal-content__right-top-copy-link')}>
+                    https://www.tiktok.com/@a_doy2/video/7207567527344360705?is_from_webapp=1&sender_device=pc&web_id=7177605755355743745
+                  </Link>
+                  <Link className={cx('modal-content__right-top-copy-btn')}>Copy link</Link>
+                </div>
+              </div>
+              {/* center */}
+              <div className={cx('modal-content__right-center')}>
+                <div className={cx('modal-content__right-center-body')}>
+                  <div className={cx('modal-content__right-center-body-info')}>
+                    <div className={cx('modal-content__right-center-img')}>
+                      <img alt="avatar" className={cx('modal-content__right-center-avatar')} src={images.avatarVideo} />
+                    </div>
+
+                    <div className={cx('modal-content__right-center-info')}>
+                      <div className={cx('modal-content__right-center-name')}>user5099284401524</div>
+                      <div className={cx('modal-content__right-center-content')}>
+                        nhìn rất điêu thuyền nhưng ko phải😄😄😄
+                      </div>
+                      <div className={cx('modal-content__right-center-reply')}>
+                        <div className={cx('modal-content__right-center-time')}>1h ago</div>
+                        <div className={cx('modal-content__right-center-reply-btn')}>Reply</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={cx('modal-content__right-center-social')}>
+                    <span className={cx('modal-content__right-center-social-menu-icon')}>
+                      <MenuIcon />
+                    </span>
+                    <span className={cx('modal-content__right-center-social-heart-icon')}>
+                      <HeartIconRegular />
+                    </span>
+                    <span className={cx('modal-content__right-center-social-number')}>10</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* bottom */}
+              <div className={cx('modal-content__right-bottom')}>
+                <div className={cx('modal-content__right-bottom-body')}>
+                  <div className={cx('modal-content__right-bottom-input')}>
+                    <input className={cx('modal-content__right-bottom-input-comment')} type="text" />
+                    <div className={cx('modal-content__right-bottom-input-icon')}>
+                      <TippyNoHeadless content="@ a user to tag them in your comments">
+                        <span className={cx('modal-content__right-bottom-user-icon')}>
+                          <UserTagIcon />
+                        </span>
+                      </TippyNoHeadless>
+                      <TippyNoHeadless content="Click to add emoji">
+                        <span className={cx('modal-content__right-bottom-emoji-icon')}>
+                          <EmojiIcon />
+                        </span>
+                      </TippyNoHeadless>
+                    </div>
+                  </div>
+                  <div className={cx('modal-content__right-bottom-btn-post')}>Post</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

@@ -76,8 +76,9 @@
 
 .active-group {
   position: absolute;
-  left: 8%;
-  bottom: 8%;
+  padding: 10px;
+  left: 6%;
+  bottom: 6%;
   cursor: pointer;
 }
 
@@ -94,7 +95,7 @@
 .slide-container {
   background-color: rgba(22, 24, 35, 0.34);
   width: 68px;
-  display: flex;
+  display: none;
   justify-content: center;
   border-radius: 32px;
   align-items: center;
@@ -264,6 +265,14 @@
   display: flex;
 }
 
+.video:hover .slide-container {
+  display: flex;
+}
+
+.play-action {
+  display: none;
+}
+
 //Range video
 .modal-content__left-range-time {
   margin-left: 14px;
@@ -304,6 +313,16 @@
 }
 
 //VIDEO POPUP
+.modal-hide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1000;
+
+  display: flex;
+}
 .modal {
   position: fixed;
   top: 0;
@@ -313,9 +332,13 @@
   z-index: 10;
   background-color: rgba(22, 24, 35, 0.5);
 
-  display: flex;
+  display: none;
   // align-items: center;
   // justify-content: center;
+}
+
+.sound {
+  display: none;
 }
 
 .modal-container {
